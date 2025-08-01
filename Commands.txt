@@ -1,0 +1,147 @@
+System commands:
+1.System informations:
+
+uname --> used to get the type of operating system
+uname -r ==>used to get kernel version of os
+uname -a =>full info about os
+
+2.Hostname and ip info
+
+hostname : to get the private dns(Domain Name system)
+name of the system
+hostname -i : used to get private ip of the system
+ip addr : used to get private ip
+ip route : used to get private ip
+ifconfig :used to get private ip
+hostname -I : used to get all private ip address
+hostname -f : shows fully qualified domain name
+hostname -A :Shows all configured FQDNs (if multiple domains set)
+hostname -d: Shows the domain name of the system
+hostname -s : shows the short hostname(without domain)
+hostnamectl set-hostname :
+Note:
+hostname set cheyali ante Linux user lonchi root userloki velli hostname set cheyali
+to check we use ll - long list
+System uptime:
+uptime: used to get how long our system is in running state
+uptime -p : used to get only time in human readable format
+4.Date and Time Formats:
+date : shows system date and time stamp
+timedatectl : used to get time zones
+timedatectl set-timezone Asia/Kolkata : used to change timezone to IST(Indian standard time)
+Note:
+No space between + and "
+date +"%d"  : used to get day of the month(01-31)
+date +"%m"  :used to get month of the year(01-12)
+date +%y"  : used to get last two digits of the year
+date +"%H" : prints the hours(00-23)
+date +"%M" : print the minutes of hours(00-59)
+date +"%S" : print the current seconds count in the minutes(00-60)
+date +"%H:%M:%S" : prints Hours minutes and seconds
+date +"%d:%m:%y" : prints day month and year
+date +"%A,%B %d,%Y : command displays the current date in a human-readable, full format.
+date +"%D" : print Date in DD/MM/YY format
+date +"%F" : print full date as YYYY-MM-DD
+date +"%A" : print the day of the week Saturday-Sunday
+date +"%B" : prints the month between January-December
+
+User Information:
+who  : used to see how many users logged into our system
+whoami : used to check current user 
+
+Process and Kill commands:
+ps means Process state
+ps : used to see running processor in our system
+ps aux : to display all running processes on the system in a detailed format.
+kill -9 PID : used to kill a processor
+kill	Command to send a signal to a process
+-9	Signal number 9 = SIGKILL (force stop immediately)
+PID	Process ID of the target process
+
+hardware commands:
+lscpu : display information about cpu architecture like:
+CPU model name
+
+Architecture (e.g., x86_64)
+
+Number of CPUs, cores, threads
+
+CPU MHz (speed)
+
+Virtualization support
+
+Cache sizes
+
+alternate command:
+cat /proc/cpuinfo :
+shows detailed per-core CPU info, such as vendor ID, model name, CPU family, flags, etc.
+
+lsblk -a :command is used in Linux to list information about block devices (like hard disks, SSDs, USB drives.
+
+free or cat /proc/meminfo :Displays system memory(RAM) details in KB
+
+free gives a quick summary (total, used, free, shared, cached, available).
+
+cat /proc/meminfo gives detailed memory info line-by-line, like:
+
+MemTotal
+MemFree
+Buffers
+Cached
+SwapTotal
+
+free -m :
+Displays the same memory usage as free, but in megabytes (MB) for easier reading.
+
+free -h :
+Report file system disk space usage in human readable languages
+Details it shows:
+
+Filesystem (e.g., /dev/sda1)
+Size
+Used
+Available
+Use%
+Mount point (e.g., /, /home, /boot)
+🔹 -h flag makes sizes easier to read (e.g., 2G instead of 2048000K).
+
+File commands:
+touch file-name : used to create a single file
+touch f1 f2 f3 : used to create multiple files
+touch f1{1..4} : used to create 4 files at a time
+rm file : used to remove a single file
+rm f1 f2 f3 : used to remove multiple files
+rm f1{1..4} : used to remove 4 files
+rm -f * : used to remove all files  at a time
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Note:
+You're stuck in a multi-line mode (secondary prompt) in the terminal because of a syntax error — probably due to a missing or mismatched quote (').
+
+You're seeing:
+> 
+which means Bash is waiting for the rest of a command.
+✅ To exit this prompt safely:
+Just press:
+Ctrl + C
